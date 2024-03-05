@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className=" h-[100%]">
@@ -13,7 +13,7 @@ const HomePage = () => {
         </div>
         <ul className="flex justify-between px-10 py-4 text-center mt-1">
           <Link to="/">
-            {' '}
+            {" "}
             <li className="px-3 text-xl font-sans font-semibold">Home</li>
           </Link>
 
@@ -28,15 +28,8 @@ const HomePage = () => {
           </Link>
         </ul>
       </div>
-      <div className="flex items-center justify-center">
-        <img
-          src="https://img.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg?w=900&t=st=1709465615~exp=1709466215~hmac=42e471aa2ccc2f93994efaf36e93c2051a7fd0a5193d3b6692332b5ccbf0a794"
-          className="w-[55%]"
-          alt="this is homepage logo"
-        />
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
