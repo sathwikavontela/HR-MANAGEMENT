@@ -1,14 +1,14 @@
-import React from "react";
-import EmployeeHeader from "./EmployeeHeader";
-import Body from "./Body";
+import React from 'react'
+import Body from './Body'
+import Header from './Header'
 
 const Browse = () => {
   return (
     <div>
-      <EmployeeHeader />
+      <Header />
       <Body />
     </div>
-  );
-};
+  )
+}
 
-export default Browse;
+export default Browse
