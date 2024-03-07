@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const HomePage = () => {
+const Header = () => {
   return (
-    <div className=" h-[100%]">
+    <div>
       <div className="flex justify-between border-3 border bg-white rounded-2xl ">
         <div>
           <img
@@ -36,15 +36,8 @@ const HomePage = () => {
           </Link>
         </ul>
       </div>
-      <div className="flex items-center justify-center">
-        <img
-          src="https://img.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg?w=900&t=st=1709465615~exp=1709466215~hmac=42e471aa2ccc2f93994efaf36e93c2051a7fd0a5193d3b6692332b5ccbf0a794"
-          className="w-[55%]"
-          alt="this is homepage logo"
-        />
-      </div>
     </div>
   )
 }
 
-export default HomePage
+export default Header

@@ -4,6 +4,12 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import AdminLogin from './components/Admin/AdminLogin'
 import EmployeeLogin from './components/Employee/EmployeeLogin'
 import ManagerLogin from './components/Manager/ManagerLogin'
+import EmployeeHeader from './components/Employee/EmployeeHeader'
+import EmployeeHome from './components/Employee/EmployeeHome'
+import SalaryDetails from './components/Employee/SalaryDetails'
+import ProjectDetails from './components/Employee/ProjectDetails'
+import ProjectReport from './components/Employee/ProjectReport'
+import LeaveReport from './components/Employee/LeaveReport'
 const Applayout = () => {
   return (
     <div>
@@ -33,6 +39,26 @@ const appRouter = createBrowserRouter([
       {
         path: '/managerLogin/',
         element: <ManagerLogin />,
+      },
+      {
+        path: '/employeeHomepage/',
+        element: <EmployeeHome />,
+      },
+      {
+        path: '/employeeSalaryDetails/',
+        element: <SalaryDetails />,
+      },
+      {
+        path: '/employeeProjectDetails',
+        element: <ProjectDetails />,
+      },
+      {
+        path: '/employeeProjectReport/',
+        element: <ProjectReport />,
+      },
+      {
+        path: '/employeeLeaveReport/',
+        element: <LeaveReport />,
       },
     ],
   },
