@@ -1,7 +1,7 @@
 import React from "react";
 import AdminHeader from "./AdminHeader";
 
-const AdminAddSalary = () => {
+const AdminAddEmployee = () => {
   return (
     <div>
       <AdminHeader />
@@ -16,7 +16,7 @@ const AdminAddSalary = () => {
           </div>
           <form className=" flex flex-col mt-10">
             <h1 className="text-2xl text-violet-600  font-bold ml-6">
-              Add Salary
+              Add Employee
             </h1>
             <label className="mt-3 ml-5">Employee Name</label>
             <input
@@ -24,33 +24,20 @@ const AdminAddSalary = () => {
               placeholder="Enter Employee Name"
               className="mt-1 ml-5 mr-5 border-2  px-3 text-sm border-gray-500 rounded-lg h-9"
             />
-            <label className="mt-3 ml-5">Month</label>
-            <select
-              name="month"
-              id="month"
-              className="mt-1 ml-5 mr-5 border-2  px-3 text-sm border-gray-500 rounded-lg h-9"
-            >
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="October">October</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
-            </select>
-            <label className="mt-2 ml-5  px-1">Amount</label>
+            <label className="mt-3 ml-5 px-1">Username</label>
             <input
               type="text"
-              placeholder="Enter Amount"
+              placeholder="Enter Username"
+              className="mt-1 ml-5 mr-5 border-2  px-3 text-sm border-gray-500 rounded-lg h-9"
+            />
+            <label className="mt-2 ml-5  px-1">Password</label>
+            <input
+              type="text"
+              placeholder="Enter Password"
               className="mt-1 ml-5 mr-5 border-2 border-gray-500 text-sm rounded-lg h-9  px-3"
             />
             <button className=" mt-6 ml-5 text-center text-white h-[34px]  bg-violet-500 mr-5 rounded-md">
-              Submit
+              Register
             </button>
           </form>
         </div>
@@ -59,4 +46,4 @@ const AdminAddSalary = () => {
   );
 };
 
-export default AdminAddSalary;
+export default AdminAddEmployee;
