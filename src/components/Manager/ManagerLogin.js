@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 import React from 'react'
 import Header from '../Header'
+=======
+import React from "react";
+import HomePage from "../HomePage";
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
 
 const ManagerLogin = () => {
   return (
     <div>
+<<<<<<< HEAD
       <Header />
+=======
+      <HomePage />
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
       <div className=" flex justify-center items-center  bg-violet-500 h-screen">
         <div className="flex bg-white shadow-2xl h-[400px] w-[700px] ">
           <div>
@@ -37,6 +46,13 @@ const ManagerLogin = () => {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   )
 }
 export default ManagerLogin
+=======
+  );
+};
+
+export default ManagerLogin;
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6

@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import React, { useRef } from 'react'
 import Header from '../Header'
+=======
+import React from "react";
+import HomePage from "../HomePage";
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
 
 const AdminLogin = () => {
   const username = useRef()
@@ -30,7 +35,11 @@ const AdminLogin = () => {
   }
   return (
     <div>
+<<<<<<< HEAD
       <Header />
+=======
+      <HomePage />
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
       <div className=" flex justify-center items-center  bg-violet-500 h-screen">
         <div className="flex bg-white shadow-2xl h-[400px] w-[700px] ">
           <div>
@@ -40,6 +49,7 @@ const AdminLogin = () => {
               className="h-[400px] w-[400px]"
             />
           </div>
+<<<<<<< HEAD
           <form className=" flex flex-col mt-8" onSubmit={handlesubmitform}>
             <h1 className="text-2xl text-violet-600  font-bold ml-6 font-bold font-extrabold">
               Admin Login Page
@@ -48,13 +58,25 @@ const AdminLogin = () => {
             <input
               type="text"
               ref={username}
+=======
+          <form className=" flex flex-col mt-10">
+            <h1 className="text-2xl text-violet-600  font-bold ml-6">
+              Admin Login Page
+            </h1>
+            <label className="mt-3 ml-5 px-1 text-lg">Email address</label>
+            <input
+              type="text"
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
               placeholder="Enter Email address"
               className="mt-2 ml-5 mr-5 border-2  px-3 text-md pt-1 border-gray-500 rounded-lg h-9"
             />
             <label className="mt-2 ml-5  px-1 text-lg">Password</label>
             <input
               type="text"
+<<<<<<< HEAD
               ref={password}
+=======
+>>>>>>> 79dcef208468be0535c760ea2a458dc1f07ce5f6
               placeholder="Enter Password"
               className="mt-2 ml-5 mr-5 border-2 pt-1 border-gray-500 text-md rounded-lg h-9  px-3"
             />
@@ -65,7 +87,7 @@ const AdminLogin = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AdminLogin
+export default AdminLogin;
